@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="icon" href="assets/revou.png" type="image/png" />
+    <title>Home Page</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="wrapper">
+        <div class="logo">
+          <a href="#"><img src="https://images.moqups.com/repo/9PZZyyGjJ8/p_Tf3tCodSPL/_clipboard/f5dWWU7sxe.svg?Expires=1684152454&Key-Pair-Id=K1TPUF1X6HKIYU&Signature=DHJiIJDtaZ-2pbBuy4JC91~grsFDLUkPCR0PaIxFqJmawRmHAydirdO-Dv5YAzBKwSFmH8RQU0Ttuao8HuVFXzrAq~jz1EG1fx2WD4Z0fFCnj7SKgixFPD7X2dm3okOGLAkEv8enVzS0JXh6F2NA~d2n0wgB7q5A~Qkahj4kZ8EhMw5R4reQGmE-decrZoCOEpEa3GMgIW1fqVEslKPk31X7lGZshZ48WuWe8For2pkwSc7Ddly8TDwa~dZ~gCPTJ~W099hFN9~sI27a41lLKk9wWZb~DvFH5BB2iT6Mc1GDPGly64-3GKH4r33jbN2-idVA7TrtxydYkfhEbWjnAQ__" alt="Logo e-grocer" /></a>
+        </div>
+        <div class="navbar">
+          <div class="close-nav"><button>×</button></div>
+          <nav>
+            <ul>
+              <li><a href="#part-1">Home</a></li>
+              <li><a href="#part-2">Our Package</a></li>
+              <li><a href="#part-3">Call Us</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="menu-bar">
+          <button><i></i></button>
+        </div>
+      </div>
+    </header>
+    <section class="part-1" id="part-1">
+      <div class="container title-group">
+        <h1 class="title">
+          Top Rated E-Groceries Shop in <br/>
+          Indonesian
+        </h1>
+        <p class="sub-title">Every Day with Best Ingredients</p>
+      </div>
+
+      <div class="container section-1">
+        <div class="img-section">
+          <div class="autoslide">
+            <div class="slideshow-container">
+              <div class="mySlides fade">
+                <img
+                  class="img-banner"
+                  src="assets/banner-img.jpg"
+                  alt="image"
+                />
+              </div>
+
+              <div class="mySlides fade">
+                <img
+                  class="img-banner"
+                  src="assets/banner-img.jpg"
+                  alt="image"
+                />
+              </div>
+
+              <div class="mySlides fade">
+                <img
+                  class="img-banner"
+                  src="assets/banner-img.jpg"
+                  alt="image"
+                />
+              </div>
+              <br />
+              <div style="text-align: center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br />
+          </div>
+
+          <div class="user-review">
+            <p class="quotes-banner">
+              <i>"Setiap hari beli sayur buah yang fresh disini"</i>
+            </p>
+            <br />
+            <div class="profile-user">
+              <div class="profile-user-img">
+                <img src="assets/profile.jpg" alt="profile" width="85%" />
+              </div>
+
+              <div class="profile-user-desc">
+                <p class="name-user">Mamang Eak</p>
+                <p class="desc-user"><i>Akang Baso sekaligus intel negara, 28</i></p>
+              </div>
+            </div>
+            <br />
+            <hr class="line-1" />
+            <br />
+            <div class="feature">
+              <p class="feature-header">
+                Sudah lebih dari 10 Tahun melayani masyarakat Indonesia, berikut ini adalah Kelebihan Kami dibanding aplikasi lain:
+              </p>
+
+              <div class="feature-body">
+                <div class="feature-point">
+                  <div class="feature-num">
+                    <p>1</p>
+                  </div>
+                  <div class="feature-desc">
+                    <p>
+                      Langsung dari Tangan Petani/Peternak
+                    </p>
+                  </div>
+                </div>
+                <br />
+                <div class="feature-point">
+                  <div class="feature-num">
+                    <p>2</p>
+                  </div>
+                  <div class="feature-desc">
+                    <p>
+                     Pengiriman Cepat
+                    </p>
+                  </div>
+                </div>
+                <br />
+                <div class="feature-point">
+                  <div class="feature-num">
+                    <p>3</p>
+                  </div>
+                  <div class="feature-desc">
+                    <p>
+                     Gratis Ongkir
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="separator"></div>
+        <div class="form-section">
+          <h2 class="title-contact">Contact Us</h2>
+          <p class="sub-title-contact">
+            Sales akan menghubungi anda 1x24 jam setelah data kami terima.
+          </p>
+          <br />
+
+          <form name="form-contact-us" action="index.html" onsubmit="validateForm()" method="post">
+            <label for="fname">Your Name:</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="First and last name"
+            />
+            <br /><br />
+
+            <label for="femail">Email Address:</label>
+            <input
+              type="email"
+              id="femail"
+              name="femail"
+              placeholder="example@email.com"
+            />
+            <br /><br />
+
+            <label for="finterested">What are you interested in?</label>
+            <input
+              list="interest"
+              id="finterested"
+              name="finterested"
+              placeholder="Select Option"
+            />
+            <datalist id="interest">
+              <option value="Fast Delivery"></option>
+              <option value="Fresh and good stuff"></option>
+              <option value="Discount!"></option>
+            </datalist>
+            <br /><br /><br />
+            <button class="send" type="submit">SEND</button>
+          </form>
+          <br />
+        </div>
+      </div>
+    </section>
+    <section class="part-2" id="part-2">
+      <div class="head-title-pakage">
+        <h2 class="title-pakage">Our Pakage</h2>
+      </div>
+      <div class="container">
+        <div class="fresh-section">
+          <div class="item-fresh">
+            <div class="item-fresh-img">
+              <img src="assets/fresh-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-fresh-info">
+              <h3>Fresh Vegetable</h3>
+              <p>Sayuran segar langsung dari sumber pertanian terbaik</p>
+            </div>
+          </div>
+          <div class="item-fresh">
+            <div class="item-fresh-img">
+              <img src="assets/fresh-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-fresh-info">
+              <h3>Fresh Fruit</h3>
+              <p>
+                Buah dengan kualitas terbaik dari local atau import dan harga yang menarik
+              </p>
+            </div>
+          </div>
+          <div class="item-fresh">
+            <div class="item-fresh-img">
+              <img src="assets/fresh-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-fresh-info">
+              <h3>Instant Delivery</h3>
+              <p>
+                Di kirim instant oleh kurir yang telah di training dengan SOP untuk menjaga kondisi belanja kamu
+              </p>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <hr class="line-1" />
+        <br /><br />
+        <div class="kitchen-section">
+          <div class="item-kitchen">
+            <div class="item-kitchen-img">
+              <img src="assets/kitchen-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-kitchen-info">
+              <h3>kitchen Ingredients</h3>
+              <p>Bumbu dapur lengkap untuk keperluan memasak kamu</p>
+            </div>
+          </div>
+          <div class="item-kitchen">
+            <div class="item-kitchen-img">
+              <img src="assets/kitchen-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-kitchen-info">
+              <h3>kitchen set</h3>
+              <p>Segala jenis alat masak untuk membantu kamu memasak</p>
+            </div>
+          </div>
+          <div class="item-kitchen">
+            <div class="item-kitchen-img">
+              <img src="assets/kitchen-icon.jpg" alt="icon" width="50vw" />
+            </div>
+            <div class="item-kitchen-info">
+              <h3>Bunding Set</h3>
+              <p>
+                Bingung masak apa? Sudah tersedia paket untuk kamu masak didapurmu</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="divide" />
+    <section class="part-3" id="part-3">
+      <div class="container">
+        <h2>Mau Belanja Ga Harus Mahal</h2>
+        <p>
+          Tunggu Apa lagi? Hubungi kami sekarang!
+        </p>
+       <a href="#part-1"><button class="buttoncall">CALL TO ACTION</button></a>
+      </div>
+    </section>
+    <hr class="divide" />
+    <footer>
+      <div class="container">
+        <img src="https://images.moqups.com/repo/9PZZyyGjJ8/p_Tf3tCodSPL/_clipboard/f5dWWU7sxe.svg?Expires=1684152454&Key-Pair-Id=K1TPUF1X6HKIYU&Signature=DHJiIJDtaZ-2pbBuy4JC91~grsFDLUkPCR0PaIxFqJmawRmHAydirdO-Dv5YAzBKwSFmH8RQU0Ttuao8HuVFXzrAq~jz1EG1fx2WD4Z0fFCnj7SKgixFPD7X2dm3okOGLAkEv8enVzS0JXh6F2NA~d2n0wgB7q5A~Qkahj4kZ8EhMw5R4reQGmE-decrZoCOEpEa3GMgIW1fqVEslKPk31X7lGZshZ48WuWe8For2pkwSc7Ddly8TDwa~dZ~gCPTJ~W099hFN9~sI27a41lLKk9wWZb~DvFH5BB2iT6Mc1GDPGly64-3GKH4r33jbN2-idVA7TrtxydYkfhEbWjnAQ__" alt="moqups" width="13%" />
+        <div class="foo-nav">
+          <a href="">Terms of Service</a>
+          &nbsp;&nbsp;
+          <a href="">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+          <p><span>&copy;2023</span>&nbsp;&nbsp;<span>YebaTeo</span></p>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
